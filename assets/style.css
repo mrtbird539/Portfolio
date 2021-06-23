@@ -1,0 +1,40 @@
+*{
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #f28047;
+    font-family: sans-serif;
+    color: #d61a17;
+}
+body {
+    background-color: #d9dcd6;
+    color: #f28047;
+}
+
+.header h1{
+    display: inline-block;
+    font-size: 48px;
+    background-color: #d61a17;
+    color: #f28047;
+}
+
+.header nav {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.header nav ul {
+    color: #d61a17;
+    list-style: none;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #d61a17;
+}
