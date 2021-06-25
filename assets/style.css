@@ -1,19 +1,22 @@
-*{
-    justify-content: space-between;
-}
 
-.header {
-    background-color: #f28047;
-    font-family: sans-serif;
-    color: #d61a17;
-}
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #d9dcd6;
     color: #f28047;
 }
 
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #f28047;
+    color: #d61a17;
+  }
+
 .header h1{
-    display: inline-block;
+    display: inline;
     font-size: 48px;
     background-color: #d61a17;
     color: #f28047;
@@ -38,3 +41,40 @@ body {
     text-decoration: none;
     color: #d61a17;
 }
+
+.banner {
+    height: 400px;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/20/13/17/work-731198_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar a {
+    background: linear-gradient(to bottom, #d61a17 0%, #d61a17 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-size 0.2s;
+  }
+  .nav-bar a:hover {
+    background-size: 4px 50px;
+    color: #f28047;
+  }
+
+  .contact-me a {
+    background: linear-gradient(to bottom, #d61a17 0%, #d61a17 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-size 0.2s;
+    color: #f28047;
+  }
+  .contact-me a:hover {
+    background-size: 4px 50px;
+    color: #f28047;
+  }
