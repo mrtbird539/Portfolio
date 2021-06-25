@@ -48,6 +48,24 @@ body {
     background-image: url("https://cdn.pixabay.com/photo/2015/04/20/13/17/work-731198_960_720.jpg");
     background-size: cover;
     background-position: center;
+    z-index: -1;
+    position: relative;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    z-index: 1;
+    background-color: #d61a17;
+    display: block;
+    padding: 0 5px;
+    font-size: 25px;
+}
+
+.chapter {
+    text-align: right;
+    border-right: 5px solid #d61a17;
 }
 
 .nav-bar a {
