@@ -5,6 +5,11 @@ body {
     color: #f28047;
 }
 
+.contact-me section{
+    text-align: center;
+    margin-top: 25px;
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +21,7 @@ body {
   }
 
 .header h1{
-    display: inline;
+    display: block;
     font-size: 48px;
     background-color: #d61a17;
     color: #f28047;
@@ -51,6 +56,14 @@ body {
     z-index: -1;
     position: relative;
 }
+.about-me .col-7{
+    text-align: justify;
+}
+.about-me img {
+    height: 150px;
+    width: 175px;
+    float:left;
+}
 
 .subtitle {
     position: absolute;
@@ -64,10 +77,25 @@ body {
 }
 
 .chapter {
-    text-align: right;
+    text-align: end;
     border-right: 5px solid #d61a17;
 }
 
+.imgblock{
+    position: relative;
+    padding: 10px;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 12px;
+    left: 50px;
+    z-index: 1;
+    background-color: #d61a17;
+    display: block;
+    padding: 0 5px;
+    opacity: 70%;
+}
 .nav-bar a {
     background: linear-gradient(to bottom, #d61a17 0%, #d61a17 100%);
     background-position: 0 100%;
@@ -80,6 +108,10 @@ body {
   .nav-bar a:hover {
     background-size: 4px 50px;
     color: #f28047;
+  }
+
+  .imgblock:hover img {
+      opacity: 50%;
   }
 
   .contact-me a {
@@ -95,4 +127,12 @@ body {
   .contact-me a:hover {
     background-size: 4px 50px;
     color: #f28047;
+  }
+
+  @media screen and (max-width: 768px) {
+      .chapter {
+          border-right: 0px solid #d61a17;
+          border-bottom: 5px solid #d61a17;
+          text-align: center;
+      }
   }
